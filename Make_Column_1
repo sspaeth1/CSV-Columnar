@@ -1,0 +1,22 @@
+
+<html>
+<body>
+
+<script>
+
+   var specialties = ["Family Medicine/Primary Care", "Allergy & Clinical Immunology", "Public Health & Prevention", "Internal Medicine", "Nursing", " Emergency Medicine"];
+  document.getElementById("specialtiesId").innerHTML = specialties ;
+
+  function makeColumn() {
+      document.getElementById("specialtiesId").innerHTML = specialties.join("<BR>") ;
+  }
+
+</script>
+
+
+<button onclick="makeColumn()">Make Column</button>
+
+<p id="specialtiesId"></p>
+
+</body>
+</html>
